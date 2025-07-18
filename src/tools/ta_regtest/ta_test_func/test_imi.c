@@ -192,7 +192,6 @@ static ErrorNumber do_test( const TA_History *history,
    ErrorNumber errNb;
    TA_Integer outBegIdx;
    TA_Integer outNbElement;
-   TA_RangeTestParam testParam;
 
    /* Set to NAN all the elements of the gBuffers.  */
    clearAllBuffers();
@@ -273,6 +272,7 @@ static ErrorNumber do_test( const TA_History *history,
    /* Do a systematic test of most of the
     * possible startIdx/endIdx range.
     */
+   TA_RangeTestParam testParam;
    testParam.test  = test;
    testParam.close = history->close;
    testParam.open = history->open;

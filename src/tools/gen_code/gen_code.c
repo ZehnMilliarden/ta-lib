@@ -100,6 +100,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <ctype.h>
+#include <io.h>
 
 // Comment-out these to reduce processing time (useful for devs)
 #define ENABLE_JAVA

@@ -42,7 +42,7 @@ static void printRustDoublePrecisionFunctionSignature(FILE* out,
    const char* funcName = funcInfo->name;
    const char *defaultParamName;
    const char *typeString;
-   int indent, i;
+   unsigned int indent, i;
 
    sprintf(gTempBuf, "%sfn %s( int    %s,\n",
            prefix? prefix:"",
@@ -221,7 +221,6 @@ void writeRustMod(void)
 {
    // Update the rust/src/ta_func/mod.rs file.
    struct WriteRustModLinesParams params;
-   char buffer[500];
    FileHandle* out;
 
    if (!gmcpp_installed)
